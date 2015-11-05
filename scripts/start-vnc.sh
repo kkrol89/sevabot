@@ -31,7 +31,7 @@ start() {
                 x11vnc -storepasswd ~/.x11vnc/passwd
             fi
 
-            x11vnc -display :$XSERVERNUM -bg -xkb -rfbauth ~/.x11vnc/passwd
+            x11vnc -display :$XSERVERNUM -bg -xkb -rfbauth ~/.x11vnc/passwd -rfbversion 3.8
         else
             echo "x11vnc is already running!"
         fi
